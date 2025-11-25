@@ -23,7 +23,7 @@ class LeapYearChecker {
 
         if (deviceYear < currentYear) {
             System.out.println("Установите облегченную версию приложения для " + osName + ".");
-        } else if (currentYear <= deviceYear){
+        } else {
             System.out.println("Установите полную версию приложения для " + osName + ".");
         }
     }
@@ -35,7 +35,7 @@ class LeapYearChecker {
         } else if (distance <= 100) {
             return 3; // Доставка в пределах от 60 км до 100 км занимает 3 дня
         } else {
-            return 0; // Свыше 100 км доставки нет
+            return 0;  // Свыше 100 км доставки нет
         }
     }
 
