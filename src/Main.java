@@ -23,7 +23,7 @@ class LeapYearChecker {
 
         if (deviceYear < currentYear) {
             System.out.println("Установите облегченную версию приложения для " + osName + ".");
-        } else if (currentYear < deviceYear){
+        } else if (currentYear <= deviceYear){
             System.out.println("Установите полную версию приложения для " + osName + ".");
         }
     }
@@ -46,7 +46,7 @@ class LeapYearChecker {
         checkLeapYear(year);
         System.out.println("Задание №2");
         int osType = 1;
-        int deviceYear = 2026;
+        int deviceYear = 2025;
         suggestAppVersion(osType, deviceYear);
         System.out.println("Задание №3");
         int deliveryDistance = 95;
